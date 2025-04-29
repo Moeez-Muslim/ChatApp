@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Layout */
+.app {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+}
+.sidebar {
+  width: 300px;
+  border-right: 1px solid #ccc;
+}
+
+/* Login */
+.login-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+}
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.login-container input,
+.login-container button {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Contacts list */
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.contacts-list-header {
+  padding: 10px;
+  background: #ededed;
+  font-weight: bold;
+}
+.contacts-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+.contacts-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+.contacts-list li.selected {
+  background: #ddd;
+}
+
+/* Chat window */
+.chat-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.chat-header {
+  padding: 10px;
+  background: #ededed;
+  font-weight: bold;
+}
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+.chat-message {
+  max-width: 60%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 7.5px;
+}
+.chat-message.sent {
+  background: #dcf8c6;
+  align-self: flex-end;
+}
+.chat-message.received {
+  background: white;
+  align-self: flex-start;
+}
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.chat-input button {
+  padding: 10px 20px;
+  background: #075e54;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+.no-chat {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
